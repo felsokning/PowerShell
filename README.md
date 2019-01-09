@@ -1,6 +1,9 @@
 # PowerShell
 This repo contains PowerShell scripts Id've written over time to accomplish tasks.
 
+## Get-ConnectedIpAddressesRegions.ps1
+(Designed for Linux.) Finds the IP addresses that machine is connected to and then attempts to find the geo-location information of the IP address via [geoiplookup](https://linux.die.net/man/1/geoiplookup).
+
 ## Get-UsernameFromSid.ps1
 This script attempts to resolve the given SID to a username.
 
