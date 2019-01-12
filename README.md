@@ -22,6 +22,9 @@ This folder contains PowerShell scripts that include C# source, which PowerShell
 ### Get-FileVersion.ps1
 This script attempts to find the version of the DLL or executable given by the user in the parameter passed at instantiation.
 
+### Get-SwedishWeekNumber.ps1
+This script leverages InterOpServices to load a C++ DLL (see: Cpp\UnmanagedDebugging\) and call into it's main entry point. The C++ DLL then uses native (std) calls to obtain the date and return the week number to the caller.
+
 ### Get-WaitChainAnalysis.ps1
 This script leverages InterOpServices to load a C++ DLL (see: Cpp\UnmanagedDebugging\) and call into it's main entry point. The C++ DLL leverages the [Wait-Chain Traversal API](https://docs.microsoft.com/en-us/windows/desktop/Debug/wait-chain-traversal) to analyze the wait-chains of all of the threads owned by the process specified by the user in the passed parameter.
 
