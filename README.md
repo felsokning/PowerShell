@@ -5,7 +5,7 @@ This repo contains PowerShell scripts Id've written over time to accomplish task
 (Linux.) Finds the IP addresses that machine is connected to and then attempts to find the geo-location information of the IP address via [geoiplookup](https://linux.die.net/man/1/geoiplookup).
 
 ## Get-ProcessDumps.ps1
-(Windows.) Allows the user to pre-stage [CDB](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debuggers-in-the-debugging-tools-for-windows-package) on the system via the [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk), take process dumps, and copy the dumps from one location to another via [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy).
+(Windows.) Allows the user to pre-stage [CDB](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debuggers-in-the-debugging-tools-for-windows-package) on the system via the [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk), take process dumps, and copy the dumps from one location to another via [robocopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy). If the process is managed code, you can validate the dump file[s] (before copying them off of the server) vua the [Debug-DumpFile](https://github.com/felsokning/CSharp/blob/master/Public.CSharp.Research/Public.Debugging.Research/DebugDumpFile.cs) command.
 
 ## Get-UsernameFromSid.ps1
 (Windows + Linux) This script attempts to resolve the given SID to a username.
