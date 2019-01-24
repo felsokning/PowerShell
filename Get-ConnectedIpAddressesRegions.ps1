@@ -2,14 +2,18 @@
 .SYNOPSIS
 	Attempts to find the IP addresses that the machine is connected to. Then uses geoiplookup
 	to find the geographic location of each IP address that we're connected to.
+
 .DESCRIPTION
     Attempts to find the IP addresses that the machine is connected to. Then uses geoiplookup
 	to find the geographic location of each IP address that we're connected to.
+
 .NOTES
     Author         : felsokning
     Prerequisite   : Linux and geoiplookup (https://linux.die.net/man/1/geoiplookup)
     Copyright 2019 - felsokning
+
 .LINK
+
 .EXAMPLE
     ./Get-ConnectedIpAddressesRegions.ps1
 #>

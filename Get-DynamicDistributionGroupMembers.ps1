@@ -4,7 +4,9 @@
 
 .DESCRIPTION
 	Leverages the commands found in Exchange Management Shell (EMS) to find
-	the recipients that should belong to a dynamic distribution group.
+    the recipients that should belong to a dynamic distribution group. Note
+    that we store the results in a globally-scoped variable, so you call it 
+    later (e.g.: $DDGMembers)
 
 .NOTES
     Author         : felsokning
