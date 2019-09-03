@@ -1,4 +1,4 @@
-$AssemblyPath = "<Path Where You Built the WlanObtainBssids DLL>"
+$AssemblyPath = "C:\Code\git\felsokning\Cpp\Public.Cpp.Research\x64\Debug\Public.Cpp.Research.dll"
 
 $Source = @"
             namespace Test
@@ -12,7 +12,7 @@ $Source = @"
                 public static class Debug
                 {
                     [DllImport(@"$($AssemblyPath)")]
-                    public static extern IntPtr Entry();
+                    public static extern IntPtr WlanEntry();
 
                     public static List<string> NetworkList = new List<string>(0);
 
@@ -21,7 +21,7 @@ $Source = @"
                         try
                         {
                             IntPtr returnIntPtr = IntPtr.Zero;
-                            returnIntPtr = Entry();
+                            returnIntPtr = WlanEntry();
                             List<string> newStrings = new List<string>(0);
                             if(returnIntPtr != null && returnIntPtr != IntPtr.Zero)
                             {

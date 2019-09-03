@@ -26,7 +26,6 @@
         Resolve-NetworkNeighbours -Prefix 169.154.125
 
         .LINK
-        http://www.iseelondoniseefrance.se/2018/10/31/windows-powershell-discovering-and-resolving-neighbours-in-your-network/
     #>
 
     param([string]$Prefix)
